@@ -42,7 +42,7 @@ class AuthController extends Controller
     }
 
     // Admin logout function
-    public function adminLogout() 
+    public function admin_logout() 
     {
         Auth::guard('admin')->logout();
         toast('Berhasil logout!', 'success');
